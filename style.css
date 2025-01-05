@@ -1,0 +1,54 @@
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.search-input{
+    width: 500px;
+    border: 2px solid #8f00d9;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.search-button{
+    padding: 9px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #8f00d9;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+}
+.the-meal{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+.ingredients{
+    text-align: left;
+}
+.meal-list{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.meal-box{
+    width: 14%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #f2f2f2;
+    box-shadow: 4px 4px 6px #f2f2f2;
+    border-radius: 10px;
+}
+.meal-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.meal-name{
+    font-size: 22px;
+    font-weight: bold;
+    color: #8f00d9;
+}
