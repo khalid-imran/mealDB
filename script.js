@@ -7,13 +7,16 @@ function searchMeal(event) {
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${keyword}`)
         .then(res => res.json())
         .then(data => {
-          if (data?.meals.length > 0) {
+          if (data?.meals && data?.meals.length > 0) {
             displayMeals(data.meals)
           } else {
             displayError()
           }
         })
     }
+}
+function displayError() {
+    mealList.innerHTML = `<h1>Your Search Meal not Found</h1>`;
 }
 function displayMeals(meals) {    
     let html = '';
